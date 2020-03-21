@@ -1,0 +1,195 @@
+/* 公共样式 */
+
+/* 导航栏 */
+.nav {
+  width: 100%;
+  height: 2.9375rem;
+  position: fixed;
+  top: 0px;
+  background: #E8E8E8;
+  opacity: 0.7;
+  z-index: 10;
+  word-break: keep-all;
+}
+
+.nav-list {
+  width: 32rem;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.77;
+  position: absolute;
+  left: 0px;
+  top: 0.88rem;
+  padding: 0 1.06rem;
+}
+
+.nav-list-item {
+  display: block;
+  width: 5.2rem;
+  float: left;
+  font-family: 'PingFangSC-Regular';
+  font-size: .9375rem;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: .9375rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-list .current {
+  font-family: 'PingFangSC-Semibold';
+  font-size: 1.0625rem;
+  line-height: 1.0625rem;
+  color: #FF0C1B;
+}
+
+.nav-list .current span::after {
+  content: '';
+  display: inline-block;
+  height: 0.25rem;
+  width: 3.75rem;
+  background-image: linear-gradient(270deg, rgba(255,255,255,0.00) 3%, #FF0C1B 100%);
+  transform: translateY(-0.3rem);
+}
+
+/* 介绍文字 */
+.intro .header .title {
+  font-family: 'PingFangSC-Medium';
+  font-size: 1.25rem;
+  color: #e02020;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+}
+
+.intro .header .extra {
+  font-family: 'PingFangSC-Light';
+  font-size: 0.94rem;
+  color: #777777;
+  letter-spacing: 0;
+  line-height: .9375rem;
+  margin-left: 0.88rem;
+}
+
+.intro .content section {
+  margin-top: .5rem;
+  text-align: justify;
+  font-size: .8125rem;
+  font-family: 'PingFangSC-Regular';
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+/* list card 样式 */
+.list-card {
+  width: 14.94rem;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.90);
+  padding: 0 1.88rem;
+}
+
+.list-card .card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1.25rem 0 0.91rem;
+  text-align: justify;
+}
+
+.list-card .card-header .title {
+  font-size: 1.25rem;
+  color: #e02020;
+  font-family: 'PingFangSC-Medium';
+  letter-spacing: 0;
+  line-height: 1.25rem;
+}
+
+.list-card .card-header .extra {
+  font-size: 0.94rem;
+  font-family: 'PingFangSC-Light';
+  color: #000000;
+  letter-spacing: 0;
+  line-height: .9375rem;
+  padding-left: 0.38rem;
+}
+
+.list-card .card-content {
+  padding: 0.56rem 0;
+  font-family: 'PingFangSC-Regular';
+  font-size: .8125rem;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1.375rem;
+  text-align: justify;
+}
+
+/* page header样式 */
+.section .pg-header {
+  padding-top: 5.5rem;
+}
+
+.section .pg-header h5 {
+  font-family: 'PingFangSC-Medium';
+  font-size: 1.25rem;
+  color: #E02020;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.section .pg-header p {
+  font-family: 'PingFangSC-Regular';
+  font-size: .8125rem;
+  color: #555555;
+  line-height: 1.5;
+  padding-top: 1.5rem;
+  letter-spacing: .03125rem;
+  text-align: justify;
+}
+
+/* time line */
+.time-line {
+  display: block;
+  margin-top: 1.75rem;
+}
+
+.time-line ul {
+  margin-left: 4rem;
+  border-left: .125rem solid #ddd;
+  list-style: disc;
+  color: #FFFFFF;
+}
+
+.time-line ul li {
+  margin-left: .875rem;
+  margin-top: 0.3rem;
+  position: relative;
+  float: left;
+}
+
+.time-line ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.time-line ul li span {
+  position: absolute;
+  left: -4.75rem;
+  font-family: 'PingFangSC-Medium';
+  font-size: .8125rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1.5;
+  float: left;
+}
+
+.time-line ul li p {
+  font-family: 'PingFangSC-Regular';
+  font-size: .8125rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  vertical-align: top;
+  /* padding-left: 1rem; */
+  float: left;
+  text-align: justify;
+}
